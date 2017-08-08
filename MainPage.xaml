@@ -8,6 +8,18 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Name="Bob" Grid.Column="1" PointerExited="Bob_PointerExited">
+            <Ellipse Name="circle1" Fill="Beige" Height="auto" Width="auto" PointerEntered="circle1_PointerEntered"></Ellipse>
+        </Grid>
 
     </Grid>
 </Page>
